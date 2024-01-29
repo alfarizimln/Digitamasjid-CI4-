@@ -1,0 +1,207 @@
+CRITICAL - 2023-11-20 04:29:11 --> syntax error, unexpected token "=", expecting ")"
+in APPPATH\Models\ModelPengurus.php on line 19.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\latihan11\\app\\Models\\ModelPengurus.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ModelPengurus')
+ 3 APPPATH\Controllers\Pengurus.php(11): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ModelPengurus')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\latihan11\\public\\index.php')
+CRITICAL - 2023-11-20 04:30:09 --> syntax error, unexpected token "=", expecting ")"
+in APPPATH\Models\ModelPengurus.php on line 19.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\latihan11\\app\\Models\\ModelPengurus.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ModelPengurus')
+ 3 APPPATH\Controllers\Pengurus.php(11): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ModelPengurus')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\latihan11\\public\\index.php')
+CRITICAL - 2023-11-20 04:30:59 --> syntax error, unexpected token "=", expecting ")"
+in APPPATH\Models\ModelPengurus.php on line 19.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\latihan11\\app\\Models\\ModelPengurus.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ModelPengurus')
+ 3 APPPATH\Controllers\Pengurus.php(11): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ModelPengurus')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\latihan11\\public\\index.php')
+ERROR - 2023-11-20 06:24:05 --> mysqli_sql_exception: Column 'id_pengurus' cannot be null in D:\latihan11\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\latihan11\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\latihan11\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\latihan11\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\latihan11\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 D:\latihan11\app\Models\ModelPengurus.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\latihan11\app\Controllers\Pengurus.php(26): App\Models\ModelPengurus->insertData(Array)
+#6 D:\latihan11\system\CodeIgniter.php(919): App\Controllers\Pengurus->save()
+#7 D:\latihan11\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+#8 D:\latihan11\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\latihan11\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\latihan11\system\Commands\Server\rewrite.php(47): require_once('D:\\latihan11\\pu...')
+#11 {main}
+CRITICAL - 2023-11-20 06:24:05 --> Column 'id_pengurus' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_pengurus` (`id_pengurus`, `nama_pengurus`, `jabatan`, `alamat`, `no_hp`) VALUES (:id_pengurus:, :nama_pengurus:, :jabatan:, :alamat:, :no_hp:)', [...], false)
+ 2 APPPATH\Models\ModelPengurus.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Pengurus.php(26): App\Models\ModelPengurus->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\latihan11\\public\\index.php')
+ERROR - 2023-11-20 06:24:23 --> mysqli_sql_exception: Column 'id_pengurus' cannot be null in D:\latihan11\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\latihan11\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\latihan11\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\latihan11\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\latihan11\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 D:\latihan11\app\Models\ModelPengurus.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\latihan11\app\Controllers\Pengurus.php(26): App\Models\ModelPengurus->insertData(Array)
+#6 D:\latihan11\system\CodeIgniter.php(919): App\Controllers\Pengurus->save()
+#7 D:\latihan11\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+#8 D:\latihan11\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\latihan11\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\latihan11\system\Commands\Server\rewrite.php(47): require_once('D:\\latihan11\\pu...')
+#11 {main}
+CRITICAL - 2023-11-20 06:24:23 --> Column 'id_pengurus' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_pengurus` (`id_pengurus`, `nama_pengurus`, `jabatan`, `alamat`, `no_hp`) VALUES (:id_pengurus:, :nama_pengurus:, :jabatan:, :alamat:, :no_hp:)', [...], false)
+ 2 APPPATH\Models\ModelPengurus.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Pengurus.php(26): App\Models\ModelPengurus->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\latihan11\\public\\index.php')
+ERROR - 2023-11-20 06:24:40 --> mysqli_sql_exception: Column 'id_pengurus' cannot be null in D:\latihan11\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\latihan11\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\latihan11\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\latihan11\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\latihan11\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 D:\latihan11\app\Models\ModelPengurus.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\latihan11\app\Controllers\Pengurus.php(26): App\Models\ModelPengurus->insertData(Array)
+#6 D:\latihan11\system\CodeIgniter.php(919): App\Controllers\Pengurus->save()
+#7 D:\latihan11\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+#8 D:\latihan11\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\latihan11\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\latihan11\system\Commands\Server\rewrite.php(47): require_once('D:\\latihan11\\pu...')
+#11 {main}
+CRITICAL - 2023-11-20 06:24:40 --> Column 'id_pengurus' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_pengurus` (`id_pengurus`, `nama_pengurus`, `jabatan`, `alamat`, `no_hp`) VALUES (:id_pengurus:, :nama_pengurus:, :jabatan:, :alamat:, :no_hp:)', [...], false)
+ 2 APPPATH\Models\ModelPengurus.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Pengurus.php(26): App\Models\ModelPengurus->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\latihan11\\public\\index.php')
+CRITICAL - 2023-11-20 12:53:48 --> Unmatched '}'
+in APPPATH\Controllers\User.php on line 36.
+ 1 SYSTEMPATH\Router\Router.php(512): CodeIgniter\Router\AutoRouter->getRoute('user', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('user')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('user')
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\latihan11\\public\\index.php')
+ERROR - 2023-11-20 12:54:49 --> mysqli_sql_exception: Column 'id_pengurus' cannot be null in D:\latihan11\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\latihan11\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\latihan11\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\latihan11\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\latihan11\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 D:\latihan11\app\Models\ModelPengurus.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\latihan11\app\Controllers\Pengurus.php(26): App\Models\ModelPengurus->insertData(Array)
+#6 D:\latihan11\system\CodeIgniter.php(919): App\Controllers\Pengurus->save()
+#7 D:\latihan11\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+#8 D:\latihan11\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\latihan11\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\latihan11\system\Commands\Server\rewrite.php(47): require_once('D:\\latihan11\\pu...')
+#11 {main}
+CRITICAL - 2023-11-20 12:54:49 --> Column 'id_pengurus' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_pengurus` (`id_pengurus`, `nama_pengurus`, `jabatan`, `alamat`, `no_hp`) VALUES (:id_pengurus:, :nama_pengurus:, :jabatan:, :alamat:, :no_hp:)', [...], false)
+ 2 APPPATH\Models\ModelPengurus.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Pengurus.php(26): App\Models\ModelPengurus->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\latihan11\\public\\index.php')
+ERROR - 2023-11-20 12:56:27 --> mysqli_sql_exception: Column 'id_pengurus' cannot be null in D:\latihan11\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\latihan11\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\latihan11\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\latihan11\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\latihan11\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 D:\latihan11\app\Models\ModelPengurus.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\latihan11\app\Controllers\Pengurus.php(26): App\Models\ModelPengurus->insertData(Array)
+#6 D:\latihan11\system\CodeIgniter.php(919): App\Controllers\Pengurus->save()
+#7 D:\latihan11\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+#8 D:\latihan11\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\latihan11\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\latihan11\system\Commands\Server\rewrite.php(47): require_once('D:\\latihan11\\pu...')
+#11 {main}
+CRITICAL - 2023-11-20 12:56:27 --> Column 'id_pengurus' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_pengurus` (`id_pengurus`, `nama_pengurus`, `jabatan`, `alamat`, `no_hp`) VALUES (:id_pengurus:, :nama_pengurus:, :jabatan:, :alamat:, :no_hp:)', [...], false)
+ 2 APPPATH\Models\ModelPengurus.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Pengurus.php(26): App\Models\ModelPengurus->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\latihan11\\public\\index.php')
+ERROR - 2023-11-20 12:56:49 --> mysqli_sql_exception: Column 'id_pengurus' cannot be null in D:\latihan11\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\latihan11\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\latihan11\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\latihan11\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\latihan11\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 D:\latihan11\app\Models\ModelPengurus.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\latihan11\app\Controllers\Pengurus.php(26): App\Models\ModelPengurus->insertData(Array)
+#6 D:\latihan11\system\CodeIgniter.php(919): App\Controllers\Pengurus->save()
+#7 D:\latihan11\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+#8 D:\latihan11\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\latihan11\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\latihan11\system\Commands\Server\rewrite.php(47): require_once('D:\\latihan11\\pu...')
+#11 {main}
+CRITICAL - 2023-11-20 12:56:49 --> Column 'id_pengurus' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_pengurus` (`id_pengurus`, `nama_pengurus`, `jabatan`, `alamat`, `no_hp`) VALUES (:id_pengurus:, :nama_pengurus:, :jabatan:, :alamat:, :no_hp:)', [...], false)
+ 2 APPPATH\Models\ModelPengurus.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Pengurus.php(26): App\Models\ModelPengurus->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\latihan11\\public\\index.php')
+ERROR - 2023-11-20 12:56:49 --> mysqli_sql_exception: Column 'id_pengurus' cannot be null in D:\latihan11\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\latihan11\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\latihan11\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\latihan11\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\latihan11\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 D:\latihan11\app\Models\ModelPengurus.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\latihan11\app\Controllers\Pengurus.php(26): App\Models\ModelPengurus->insertData(Array)
+#6 D:\latihan11\system\CodeIgniter.php(919): App\Controllers\Pengurus->save()
+#7 D:\latihan11\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+#8 D:\latihan11\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\latihan11\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\latihan11\system\Commands\Server\rewrite.php(47): require_once('D:\\latihan11\\pu...')
+#11 {main}
+CRITICAL - 2023-11-20 12:56:49 --> Column 'id_pengurus' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_pengurus` (`id_pengurus`, `nama_pengurus`, `jabatan`, `alamat`, `no_hp`) VALUES (:id_pengurus:, :nama_pengurus:, :jabatan:, :alamat:, :no_hp:)', [...], false)
+ 2 APPPATH\Models\ModelPengurus.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Pengurus.php(26): App\Models\ModelPengurus->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\latihan11\\public\\index.php')

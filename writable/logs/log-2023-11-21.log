@@ -1,0 +1,10 @@
+CRITICAL - 2023-11-21 01:14:49 --> syntax error, unexpected single-quoted string "nama_user", expecting ")"
+in APPPATH\Models\ModelUser.php on line 25.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\latihan11\\app\\Models\\ModelUser.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ModelUser')
+ 3 APPPATH\Controllers\User.php(11): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ModelUser')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\User->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\latihan11\\public\\index.php')

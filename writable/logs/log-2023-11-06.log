@@ -1,0 +1,22 @@
+ERROR - 2023-11-06 04:09:59 --> mysqli_sql_exception: Table 'toko.sppd' doesn't exist in D:\Kuliah\Semester 5\Web 2\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Kuliah\Semester 5\Web 2\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `sp...', 0)
+#1 D:\Kuliah\Semester 5\Web 2\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sp...')
+#2 D:\Kuliah\Semester 5\Web 2\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sp...')
+#3 D:\Kuliah\Semester 5\Web 2\latihan1\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sp...', Array, false)
+#4 D:\Kuliah\Semester 5\Web 2\latihan1\app\Controllers\Quis.php(21): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\Kuliah\Semester 5\Web 2\latihan1\system\CodeIgniter.php(919): App\Controllers\Quis->simpanquis()
+#6 D:\Kuliah\Semester 5\Web 2\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quis))
+#7 D:\Kuliah\Semester 5\Web 2\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Kuliah\Semester 5\Web 2\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\Kuliah\Semester 5\Web 2\latihan1\system\Commands\Server\rewrite.php(47): require_once('D:\\Kuliah\\Semes...')
+#10 {main}
+CRITICAL - 2023-11-06 04:09:59 --> Table 'toko.sppd' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sppd` (`kodebaju`, `jenisbaju`, `hargabaju`, `jumlahbaju`, `total`) VALUES (:kodebaju:, :jenisbaju:, :hargabaju:, :jumlahbaju:, :total:)', [...], false)
+ 2 APPPATH\Controllers\Quis.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Quis->simpanquis()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quis))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Kuliah\\Semester 5\\Web 2\\latihan1\\public\\index.php')

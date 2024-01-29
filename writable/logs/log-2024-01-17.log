@@ -1,0 +1,380 @@
+INFO - 2024-01-17 00:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 00:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 00:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 07:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 07:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 03:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 03:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 03:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 06:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 06:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 06:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 06:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 06:18:40 --> mysqli_sql_exception: Table 'dbmesjiddigital.tbl_kas_keluar' doesn't exist in C:\xampp\htdocs\Digitalmasjid\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Digitalmasjid\system\Database\MySQLi\Connection.php(306): mysqli->query('select id_kas_k...', 0)
+#1 C:\xampp\htdocs\Digitalmasjid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select id_kas_k...')
+#2 C:\xampp\htdocs\Digitalmasjid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select id_kas_k...')
+#3 C:\xampp\htdocs\Digitalmasjid\app\Models\ModelKasKeluar.php(10): CodeIgniter\Database\BaseConnection->query('select id_kas_k...')
+#4 C:\xampp\htdocs\Digitalmasjid\app\Controllers\KasKeluar.php(12): App\Models\ModelKasKeluar->getkaskeluar()
+#5 C:\xampp\htdocs\Digitalmasjid\system\CodeIgniter.php(919): App\Controllers\KasKeluar->index()
+#6 C:\xampp\htdocs\Digitalmasjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+#7 C:\xampp\htdocs\Digitalmasjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Digitalmasjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Digitalmasjid\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-01-17 06:18:40 --> Table 'dbmesjiddigital.tbl_kas_keluar' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelKasKeluar.php(10): CodeIgniter\Database\BaseConnection->query('select id_kas_keluar,namakegiatan,tbl_kas_keluar.tanggal,jumlah from tbl_kas_keluar join tbl_agenda on tbl_kas_keluar.idagenda=tbl_agenda.idagenda')
+ 2 APPPATH\Controllers\KasKeluar.php(12): App\Models\ModelKasKeluar->getkaskeluar()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+INFO - 2024-01-17 06:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 06:28:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 06:29:07 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Controllers\KasKeluar.php on line 26.
+ 1 SYSTEMPATH\Router\Router.php(512): CodeIgniter\Router\AutoRouter->getRoute('KasKeluar', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('KasKeluar')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('KasKeluar')
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+CRITICAL - 2024-01-17 06:30:09 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Controllers\KasKeluar.php on line 26.
+ 1 SYSTEMPATH\Router\Router.php(512): CodeIgniter\Router\AutoRouter->getRoute('KasKeluar', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('KasKeluar')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('KasKeluar')
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+ERROR - 2024-01-17 06:32:57 --> mysqli_sql_exception: Table 'dbmesjiddigital.tbl_kas_keluar' doesn't exist in C:\xampp\htdocs\Digitalmasjid\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Digitalmasjid\system\Database\MySQLi\Connection.php(306): mysqli->query('select id_kas_k...', 0)
+#1 C:\xampp\htdocs\Digitalmasjid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select id_kas_k...')
+#2 C:\xampp\htdocs\Digitalmasjid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select id_kas_k...')
+#3 C:\xampp\htdocs\Digitalmasjid\app\Models\ModelKasKeluar.php(10): CodeIgniter\Database\BaseConnection->query('select id_kas_k...')
+#4 C:\xampp\htdocs\Digitalmasjid\app\Controllers\KasKeluar.php(12): App\Models\ModelKasKeluar->getkaskeluar()
+#5 C:\xampp\htdocs\Digitalmasjid\system\CodeIgniter.php(919): App\Controllers\KasKeluar->index()
+#6 C:\xampp\htdocs\Digitalmasjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+#7 C:\xampp\htdocs\Digitalmasjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Digitalmasjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Digitalmasjid\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-01-17 06:32:57 --> Table 'dbmesjiddigital.tbl_kas_keluar' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelKasKeluar.php(10): CodeIgniter\Database\BaseConnection->query('select id_kas_keluar,namakegiatan,tbl_kas_keluar.tanggal,jumlah from tbl_kas_keluar join tbl_agenda on tbl_kas_keluar.idagenda=tbl_agenda.idagenda')
+ 2 APPPATH\Controllers\KasKeluar.php(12): App\Models\ModelKasKeluar->getkaskeluar()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+ERROR - 2024-01-17 06:35:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'et,kas_masuk,jenis_kas,STATUS FROM tbl_kas_mesjid JOIN tbl_donatur ON iddonaturm' at line 1 in C:\xampp\htdocs\Digitalmasjid\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Digitalmasjid\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kas_m...', 0)
+#1 C:\xampp\htdocs\Digitalmasjid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kas_m...')
+#2 C:\xampp\htdocs\Digitalmasjid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kas_m...')
+#3 C:\xampp\htdocs\Digitalmasjid\app\Models\ModelKasKeluar.php(15): CodeIgniter\Database\BaseConnection->query('SELECT id_kas_m...')
+#4 C:\xampp\htdocs\Digitalmasjid\app\Controllers\KasKeluar.php(14): App\Models\ModelKasKeluar->getTotalkasanakyatim()
+#5 C:\xampp\htdocs\Digitalmasjid\system\CodeIgniter.php(919): App\Controllers\KasKeluar->index()
+#6 C:\xampp\htdocs\Digitalmasjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+#7 C:\xampp\htdocs\Digitalmasjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Digitalmasjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Digitalmasjid\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-01-17 06:35:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'et,kas_masuk,jenis_kas,STATUS FROM tbl_kas_mesjid JOIN tbl_donatur ON iddonaturm' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelKasKeluar.php(15): CodeIgniter\Database\BaseConnection->query('SELECT id_kas_mesjid,kas_keluar,nama,tanggal,k`tbl_kas_keluar`et,kas_masuk,jenis_kas,STATUS FROM tbl_kas_mesjid JOIN tbl_donatur ON iddonaturmasjid=iddonatur WHERE STATUS=\'Masuk\';
+        SELECT SUM(kas_masuk) AS totalmasuk,SUM(kas_keluar) AS totalkeluar,SUM(kas_masuk)-SUM(kas_keluar) AS totalsemua FROM tbl_kas_mesjid WHERE jenis_kas=\'Anak Yatim\' ;')
+ 2 APPPATH\Controllers\KasKeluar.php(14): App\Models\ModelKasKeluar->getTotalkasanakyatim()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+ERROR - 2024-01-17 06:36:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'et,kas_masuk,jenis_kas,STATUS FROM tbl_kas_mesjid JOIN tbl_donatur ON iddonaturm' at line 1 in C:\xampp\htdocs\Digitalmasjid\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Digitalmasjid\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kas_m...', 0)
+#1 C:\xampp\htdocs\Digitalmasjid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kas_m...')
+#2 C:\xampp\htdocs\Digitalmasjid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kas_m...')
+#3 C:\xampp\htdocs\Digitalmasjid\app\Models\ModelKasKeluar.php(15): CodeIgniter\Database\BaseConnection->query('SELECT id_kas_m...')
+#4 C:\xampp\htdocs\Digitalmasjid\app\Controllers\KasKeluar.php(14): App\Models\ModelKasKeluar->getTotalkasanakyatim()
+#5 C:\xampp\htdocs\Digitalmasjid\system\CodeIgniter.php(919): App\Controllers\KasKeluar->index()
+#6 C:\xampp\htdocs\Digitalmasjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+#7 C:\xampp\htdocs\Digitalmasjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Digitalmasjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Digitalmasjid\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-01-17 06:36:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'et,kas_masuk,jenis_kas,STATUS FROM tbl_kas_mesjid JOIN tbl_donatur ON iddonaturm' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelKasKeluar.php(15): CodeIgniter\Database\BaseConnection->query('SELECT id_kas_mesjid,kas_keluar,nama,tanggal,k`tbl_kas_keluar`et,kas_masuk,jenis_kas,STATUS FROM tbl_kas_mesjid JOIN tbl_donatur ON iddonaturmasjid=iddonatur WHERE STATUS=\'Masuk\';
+        SELECT SUM(kas_masuk) AS totalmasuk,SUM(kas_keluar) AS totalkeluar,SUM(kas_masuk)-SUM(kas_keluar) AS totalsemua FROM tbl_kas_mesjid WHERE jenis_kas=\'Anak Yatim\'')
+ 2 APPPATH\Controllers\KasKeluar.php(14): App\Models\ModelKasKeluar->getTotalkasanakyatim()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+CRITICAL - 2024-01-17 13:44:06 --> Undefined array key "jumlah"
+in APPPATH\Views\kaskeluar\v_kaskeluar.php on line 109.
+ 1 APPPATH\Views\kaskeluar\v_kaskeluar.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah"', 'C:\\xampp\\htdocs\\Digitalmasjid\\app\\Views\\kaskeluar\\v_kaskeluar.php', 109)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Digitalmasjid\\app\\Views\\kaskeluar\\v_kaskeluar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('KasKeluar/v_kaskeluar', [], true)
+ 5 APPPATH\Controllers\KasKeluar.php(15): view('KasKeluar/v_kaskeluar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+CRITICAL - 2024-01-17 13:47:09 --> Undefined array key "jumlah"
+in APPPATH\Views\kaskeluar\v_kaskeluar.php on line 109.
+ 1 APPPATH\Views\kaskeluar\v_kaskeluar.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah"', 'C:\\xampp\\htdocs\\Digitalmasjid\\app\\Views\\kaskeluar\\v_kaskeluar.php', 109)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Digitalmasjid\\app\\Views\\kaskeluar\\v_kaskeluar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('KasKeluar/v_kaskeluar', [], true)
+ 5 APPPATH\Controllers\KasKeluar.php(15): view('KasKeluar/v_kaskeluar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+INFO - 2024-01-17 13:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:55:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:03:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 07:09:37 --> Call to a member function getRow() on array
+in APPPATH\Controllers\KasKeluar.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+INFO - 2024-01-17 14:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 07:18:57 --> Call to a member function getRow() on array
+in APPPATH\Controllers\KasKeluar.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+CRITICAL - 2024-01-17 07:19:45 --> Call to a member function getRow() on array
+in APPPATH\Controllers\KasKeluar.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+CRITICAL - 2024-01-17 07:21:22 --> Call to a member function getRow() on array
+in APPPATH\Controllers\KasKeluar.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+CRITICAL - 2024-01-17 07:40:42 --> Array callback must have exactly two elements
+in APPPATH\Controllers\KasKeluar.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+CRITICAL - 2024-01-17 07:46:08 --> Call to a member function getRow() on array
+in APPPATH\Controllers\KasKeluar.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+INFO - 2024-01-17 08:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 08:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 08:17:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 08:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 08:17:44 --> Call to a member function getRow() on array
+in APPPATH\Controllers\KasKeluar.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+INFO - 2024-01-17 08:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 08:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 08:37:30 --> Array callback must have exactly two elements
+in APPPATH\Controllers\KasKeluar.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+INFO - 2024-01-17 15:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 08:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 08:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 08:39:38 --> Call to undefined method stdClass::getRow()
+in APPPATH\Controllers\KasKeluar.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+INFO - 2024-01-17 15:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 08:42:18 --> mysqli_sql_exception: Table 'dbmesjiddigital.tbl_kas_keluar' doesn't exist in C:\xampp\htdocs\Digitalmasjid\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Digitalmasjid\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\Digitalmasjid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\Digitalmasjid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\Digitalmasjid\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\Digitalmasjid\app\Models\ModelKasKeluar.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Digitalmasjid\app\Controllers\KasKeluar.php(35): App\Models\ModelKasKeluar->insertData(Array)
+#6 C:\xampp\htdocs\Digitalmasjid\system\CodeIgniter.php(919): App\Controllers\KasKeluar->save()
+#7 C:\xampp\htdocs\Digitalmasjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+#8 C:\xampp\htdocs\Digitalmasjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Digitalmasjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Digitalmasjid\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-01-17 08:42:18 --> Table 'dbmesjiddigital.tbl_kas_keluar' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kas_keluar` (`tanggal`, `ket`, `kas_keluar`, `kas_masuk`, `jenis_kas`, `status`) VALUES (:tanggal:, :ket:, :kas_keluar:, :kas_masuk:, :jenis_kas:, :status:)', [...], false)
+ 2 APPPATH\Models\ModelKasKeluar.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\KasKeluar.php(35): App\Models\ModelKasKeluar->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+ERROR - 2024-01-17 08:42:20 --> mysqli_sql_exception: Table 'dbmesjiddigital.tbl_kas_keluar' doesn't exist in C:\xampp\htdocs\Digitalmasjid\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Digitalmasjid\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\Digitalmasjid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\Digitalmasjid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\Digitalmasjid\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\Digitalmasjid\app\Models\ModelKasKeluar.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Digitalmasjid\app\Controllers\KasKeluar.php(35): App\Models\ModelKasKeluar->insertData(Array)
+#6 C:\xampp\htdocs\Digitalmasjid\system\CodeIgniter.php(919): App\Controllers\KasKeluar->save()
+#7 C:\xampp\htdocs\Digitalmasjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+#8 C:\xampp\htdocs\Digitalmasjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Digitalmasjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Digitalmasjid\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-01-17 08:42:20 --> Table 'dbmesjiddigital.tbl_kas_keluar' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kas_keluar` (`tanggal`, `ket`, `kas_keluar`, `kas_masuk`, `jenis_kas`, `status`) VALUES (:tanggal:, :ket:, :kas_keluar:, :kas_masuk:, :jenis_kas:, :status:)', [...], false)
+ 2 APPPATH\Models\ModelKasKeluar.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\KasKeluar.php(35): App\Models\ModelKasKeluar->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+INFO - 2024-01-17 15:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:52:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:54:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 08:54:49 --> mysqli_sql_exception: Table 'dbmesjiddigital.tbl_kas_keluar' doesn't exist in C:\xampp\htdocs\Digitalmasjid\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Digitalmasjid\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\Digitalmasjid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\Digitalmasjid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\Digitalmasjid\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\Digitalmasjid\app\Models\ModelKasKeluar.php(31): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\Digitalmasjid\app\Controllers\KasKeluar.php(44): App\Models\ModelKasKeluar->deletekaskeluar('15')
+#6 C:\xampp\htdocs\Digitalmasjid\system\CodeIgniter.php(919): App\Controllers\KasKeluar->delete()
+#7 C:\xampp\htdocs\Digitalmasjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+#8 C:\xampp\htdocs\Digitalmasjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Digitalmasjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Digitalmasjid\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-01-17 08:54:49 --> Table 'dbmesjiddigital.tbl_kas_keluar' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tbl_kas_keluar`
+WHERE `id_kas_keluar` = :id_kas_keluar:', [...], false)
+ 2 APPPATH\Models\ModelKasKeluar.php(31): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\KasKeluar.php(44): App\Models\ModelKasKeluar->deletekaskeluar('15')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+INFO - 2024-01-17 15:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:56:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:58:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:17:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:20:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 09:24:55 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH\Controllers\KasKeluar.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+CRITICAL - 2024-01-17 09:25:27 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH\Controllers\KasKeluar.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+CRITICAL - 2024-01-17 09:25:30 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH\Controllers\KasKeluar.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+INFO - 2024-01-17 16:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:25:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 09:25:49 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH\Controllers\KasKeluar.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+CRITICAL - 2024-01-17 09:26:48 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH\Controllers\KasKeluar.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+INFO - 2024-01-17 09:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:27:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 09:27:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH\Controllers\KasKeluar.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\KasKeluar->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasKeluar))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Digitalmasjid\\public\\index.php')
+INFO - 2024-01-17 16:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

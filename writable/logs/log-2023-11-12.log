@@ -1,0 +1,11 @@
+CRITICAL - 2023-11-12 15:30:48 --> Invalid file: "layout/calendar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/calendar.php')
+ 2 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/calendar', [], true)
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('layout/beranda', [], true)
+ 4 APPPATH\Controllers\Layout.php(8): view('layout/beranda')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Layout->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Kuliah\\Semester 5\\Web 2\\latihan1\\public\\index.php')
